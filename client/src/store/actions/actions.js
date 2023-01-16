@@ -26,7 +26,8 @@ export const getRecipes = () => {
         return false;
       }, {count: 0});
       const database = await fetch(
-        `http://localhost:3001/recipes/search`
+        // `http://localhost:3001/recipes/search`
+        `https://pi-food-production-d652.up.railway.app/recipes/search`
       );
       const dataResults = await database.json()
     
@@ -58,7 +59,8 @@ export const getRecipesByQueryName = (q) => {
   return async (dispatch) => {
   
     const resp = await fetch(
-      `http://localhost:3001/recipes?name=${q}`
+      // `http://localhost:3001/recipes?name=${q}`
+      `https://pi-food-production-d652.up.railway.app/recipes?name=${q}`
     );
 
     const results = await resp.json();
@@ -78,9 +80,9 @@ export const getRecipesByQueryName = (q) => {
 
 export const getRecipesByParams = (id) => {
   return async (dispatch) => {
-    console.log(id)
     const resp = await fetch(
-      `http://localhost:3001/recipes/${id}`
+      // `http://localhost:3001/recipes/${id}`
+      `https://pi-food-production-d652.up.railway.app/recipes/${id}`
     );
 
     const results = await resp.json();
@@ -104,7 +106,6 @@ export const createRecipe = (recipe) => {
       "diets": diets,
       "analyzedInstructions": todos
     });
-    console.log(raw)
     let requestOptions = {
       method: 'POST',
       headers: myHeaders,
@@ -114,7 +115,8 @@ export const createRecipe = (recipe) => {
     
     // fetch("http://localhost:3001/recipes", requestOptions)
      
-    const resp = await fetch("http://localhost:3001/recipes",  requestOptions)
+    // const resp = await fetch("http://localhost:3001/recipes",  requestOptions)
+    const resp = await fetch("https://pi-food-production-d652.up.railway.app/recipes",  requestOptions)
   //     method: 'POST',
   //     redirect: 'follow',
   //     headers: {
@@ -142,7 +144,8 @@ export const createRecipe = (recipe) => {
   export const getDiets = () => {
     return async (dispatch) => {
       const resp = await fetch(
-        `http://localhost:3001/diets`
+        // `http://localhost:3001/diets`
+        `https://pi-food-production-d652.up.railway.app//diets`
       );
   
       const results = await resp.json();
