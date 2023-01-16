@@ -33,12 +33,12 @@ export const TodoAdd = ({onNewTodo}) => {
           <input
           onChange={onInputChange}
             type="text"
-            placeholder="¿Que hay que hacer?"
+            placeholder="a new Step"
             className={styles.formInputField}
             value={message}
           />
           <button onClick={addNewTodo} type="submit" className="btn btn-outline-primary mt-1">
-            Agregar
+            Add
           </button>
         </form>
   )

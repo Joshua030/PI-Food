@@ -17,7 +17,7 @@ export const CreateRecipe = () => {
     dispatch(getDiets());
   }, []);
 
-  console.log(todos);
+
 
   const { title, summary, healthScore, onInputChange } = useForm({
     title: "",

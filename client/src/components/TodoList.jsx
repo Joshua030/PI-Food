@@ -8,7 +8,7 @@ export const TodoList = ({todos, onDeleteTodo }) => {
     <button 
     className="btn btn-danger"
     onClick={()=>onDeleteTodo(id)}
-    >Borrar</button>
+    >Delete</button>
     </li>
 )}
   </ul>
