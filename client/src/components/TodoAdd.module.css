@@ -1,0 +1,12 @@
+.formAddTodo{
+    display: flex;
+    width: 100%;
+    margin-top: 1.3rem;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+
+}
+
+.formInputField {
+    width: 70% !important;
+}

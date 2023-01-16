@@ -1,0 +1,49 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fdf2e9;
+    /* because we want header to be sticky later*/
+    height: 10rem;
+    padding: 0 4.5rem;
+  }
+  
+
+  .logo {
+    height: 10rem;
+  }
+  
+  .mainNavList {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+  }
+  
+  .mainNavLink:link,
+  .mainNavLink:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.6rem;
+    transition: all;
+  }
+  
+  .mainNavLink:hover,
+  .mainNavLink:active {
+    color: #cf711f;
+  }
+  
+  .mainNavLink.navCta:link,
+  .mainNavLink.navCta:visited {
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    color: #fff;
+    background-color: #e67e22;
+  }
+  
+  .mainNavLink.navCta:hover,
+  .mainNavLink.navCta:active {
+    background-color: #cf711f;
+  }

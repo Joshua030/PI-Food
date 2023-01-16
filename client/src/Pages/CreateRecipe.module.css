@@ -1,0 +1,94 @@
+
+.mainInformation {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* background-color: #e67e22; */
+    box-shadow: 0 2.4rem 4.6rem rgb(0 0 0 / 8%);
+    background-image: linear-gradient(to right bottom,#eb984e,#e67e22);
+    /* height: 50rem; */
+    border-radius: 11px;
+    overflow: hidden;
+}
+
+.textBox{
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    color: #45260a;
+}
+
+.primaryHeading {
+    color: inherit;
+    margin-bottom: 5.2rem;
+    font-size: 4.0rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.imgBox{
+    background-image: linear-gradient(to right bottom,rgba(235,151,78,0.35),rgba(230,125,34,0.35)),url('../images/meals/eating.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.PrincipalInformation{
+    display:flex;
+    gap:3.1rem;
+    /* margin-bottom: 3rem; */
+}
+
+.inputCheck {
+    width: auto !important;
+    transform: scale(3);
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+}
+
+.innerName{
+    color: #fdf2e9
+}
+
+.stepsTable{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.formSubtitle {
+   font-size: 2rem;
+   font-weight: 400;
+}
+
+.mainButton{
+    margin-left: auto;
+    display: flex;
+    font-size: 2rem;
+    font-weight: 600;
+    border-radius: 9px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.3s;
+    background-color: #45260a;
+    color: #fdf2e9;
+    padding: 2.2rem 6.6rem;
+
+}
+
+
+.mainButton:hover {
+    background-color: #fff;
+    color: #555;
+  }
+
+.linkCreateRecipe{
+    color:  #fff;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    transition: all 0.3s;
+}
+
+.linkCreateRecipe:hover {
+    color:  #45260a;
+    border-bottom: 1px solid transparent;
+}

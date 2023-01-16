@@ -1,0 +1,21 @@
+.listGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-bottom: 3rem;
+}
+
+.listInner{
+        font-size: 1.8rem;
+        display: flex;
+        align-items: center;
+        grid-gap: 1.6rem;
+        gap: 1.6rem;
+        letter-spacing: -0.3px;
+        line-height: 1.6;
+        text-align: justify;
+}
+
+.listInnerText{
+    font-size: 1.2rem;
+}

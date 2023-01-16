@@ -1,0 +1,135 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+  /* because we want header to be sticky later*/
+  height: 9.6rem;
+  padding: 0 4.5rem;
+}
+
+.logo {
+  height: 13rem;
+}
+
+.mainNavList {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.mainNavLink:link,
+.mainNavLink:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.6rem;
+  transition: all;
+}
+
+.mainNavLink:hover,
+.mainNavLink:active {
+  color: #cf711f;
+}
+
+.mainNavLink.navCta:link,
+.mainNavLink.navCta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.mainNavLink.navCta:hover,
+.mainNavLink.navCta:active {
+  background-color: #cf711f;
+}
+
+/************************/
+/*HERO SECTION*/
+/************************/
+.sectionHero {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 9.6rem;
+}
+
+.heroDescription {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+}
+
+.heroImg {
+  width: 100%;
+}
+
+.deliveredMeals {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 8rem;
+}
+.deliveredImgs {
+  display: flex;
+}
+
+.deliveredImgs img {
+  height: 6.4rem;
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
+}
+
+.deliveredImgs img:last-child {
+  margin: 0;
+}
+
+.deliveredText {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.deliveredText span {
+  color: #cf711f;
+  font-weight: 700;
+}
+
+/************************/
+/*FEATURED IN SECTION*/
+/************************/
+.sectionFeatured {
+    padding: 4.8rem 0 3.2rem 0;
+  }
+  .headingFeaturedIn {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2.4rem;
+    color: #888;
+  }
+  
+  .logos {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .logos img {
+    height: 3.2rem;
+    filter: brightness(0);
+    opacity: 50%;
+  }

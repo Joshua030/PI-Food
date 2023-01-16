@@ -1,0 +1,72 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+  /* because we want header to be sticky later*/
+  height: 12rem;
+  padding: 1rem 4.5rem;
+  border-top: 4mm ridge #e67e22;
+  gap: 2rem;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+.secondBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 9rem;
+}
+
+.secondaryButtons {
+  display: flex;
+  gap: 3rem;
+}
+
+/************************/
+/*RECIPE SECTION*/
+/************************/
+
+.sectionRecipes {
+  padding: 5rem 0rem;
+}
+
+.innerContainer {
+  display: flex;
+    gap: 0.3rem;
+}
+
+.inputContainer {
+  height: 3rem;
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color:rgb(251, 252, 252);
+  border-radius: 9px;
+  box-shadow: inset -2px -2px 4px rgb(0 0 0 / 10%);
+}
+
+.inputContainer::placeholder {
+  color: #6d7f8f;
+}
+
+.searchIcon {
+  height: 3rem;
+  width: 3rem;
+  box-shadow: -2px -2px 6px rgb(255 255 255 / 60%), 2px 2px 12px #c8d8e7;
+  border-radius: 9px;
+  transform: translate(-1px, -1px);
+  border: none;
+}
+
+
