@@ -145,7 +145,7 @@ export const createRecipe = (recipe) => {
     return async (dispatch) => {
       const resp = await fetch(
         // `http://localhost:3001/diets`
-        `https://pi-food-production-d652.up.railway.app//diets`
+        `https://pi-food-production-d652.up.railway.app/diets`
       );
   
       const results = await resp.json();
